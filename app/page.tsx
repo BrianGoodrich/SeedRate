@@ -56,7 +56,6 @@ export default function Home() {
         <div className="border-b border-white/10 pb-12">
           <h2 className="text-base/7 font-semibold text-white">Planter Calibration Information</h2>
           <p className="mt-1 text-sm/6 text-gray-400">If you&apos;re a big stinky twink enter your planter information below.</p>
-
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
               <label htmlFor="rowwidth" className="block text-sm/6 font-medium text-white">
