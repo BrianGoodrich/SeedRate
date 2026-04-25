@@ -43,17 +43,17 @@ export default function Home() {
       maximumFractionDigits: 2
     }).toString());
 
-    // const lbperac = document.getElementById("calibratelbsperac");
-    // if (lbperac) {
-    //   lbperac.style.border = "2px solid green";
-    //   lbperac.style.borderRadius = "8px";
-    // }
+    const lbperac = document.getElementById("calibratelbsperac");
+    if (lbperac) {
+      lbperac.style.border = "2px solid green";
+      lbperac.style.borderRadius = "8px";
+    }
 
-    // const seedsperac = document.getElementById("calibrateseedsperac");
-    // if (seedsperac) {
-    //   seedsperac.style.border = "2px solid green";
-    //   seedsperac.style.borderRadius = "8px";
-    // }
+    const seedsperac = document.getElementById("calibrateseedsperac");
+    if (seedsperac) {
+      seedsperac.style.border = "2px solid green";
+      seedsperac.style.borderRadius = "8px";
+    }
 
     setShowFlash(true);
 
@@ -82,17 +82,17 @@ export default function Home() {
     }).toString() ,
     );
 
-    // const lbperac = document.getElementById("rateseedsacre");
-    // if (lbperac) {
-    //   lbperac.style.border = "2px solid green";
-    //   lbperac.style.borderRadius = "8px";
-    // }
+    const lbperac = document.getElementById("rateseedsacre");
+    if (lbperac) {
+      lbperac.style.border = "2px solid green";
+      lbperac.style.borderRadius = "8px";
+    }
 
-    // const seedsperac = document.getElementById("outputratelbsacre");
-    // if (seedsperac) {
-    //   seedsperac.style.border = "2px solid green";
-    //   seedsperac.style.borderRadius = "8px";
-    // }
+    const seedsperac = document.getElementById("outputratelbsacre");
+    if (seedsperac) {
+      seedsperac.style.border = "2px solid green";
+      seedsperac.style.borderRadius = "8px";
+    }
 
 
   };
@@ -306,6 +306,7 @@ export default function Home() {
                 </div>
                 <div className="mt-6 flex items-center justify-end gap-x-6">
                   <button
+                    style={{ position: "relative", zIndex: 9999, pointerEvents: "auto" }}
                     type="button"
                     onClick={() => calibrate()}
                     className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
@@ -315,16 +316,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* <div className="mt-6 flex items-center justify-end gap-x-6">
-              <button
-                type="button"
-                onClick={() => calibrate()}
-                className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-                Calibrate
-              </button>
-            </div> */}
           </form>
           <form onSubmit={(e) => e.preventDefault()} onTouchStart={(e) => e.preventDefault()}>
             <div className="space-y-12">
@@ -474,6 +465,7 @@ export default function Home() {
                 </div>
                 <div className="mt-6 flex items-center justify-end gap-x-6">
                   <button
+                    style={{ position: "relative", zIndex: 9999, pointerEvents: "auto" }}
                     type="button"
                     onClick={() => calculate()}
                     className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
@@ -483,15 +475,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="mt-6 flex items-center justify-end gap-x-6">
-              <button
-                type="button"
-                onClick={() => calculate()}
-                className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-              >
-                Calculate
-              </button>
-            </div> */}
           </form>
         </div>
       </main>
