@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { isAnyArrayBuffer } from "util/types";
 
 export default function Home() {
   const [numrows, setnumrows] = useState("");
@@ -36,6 +37,16 @@ export default function Home() {
     setcalibratelbsperac(isNaN(lbsperacre) ? "" : lbsperacre.toString());
     setcalibrateseedsperac(isNaN(seedsperacre) ? "" : seedsperacre.toString());
 
+    const lbperac = document.getElementById("calibratelbsperac");
+    if (lbperac) {
+      lbperac.style.border = "2px solid green";
+    }
+
+    const seedsperac = document.getElementById("calibrateseedsperac");
+    if (seedsperac) {
+      seedsperac.style.border = "2px solid green";
+    }
+
     setShowFlash(true);
 
     setTimeout(() => {
@@ -45,15 +56,32 @@ export default function Home() {
 
   const calculate = () => {
     setrateseedsacre(
-      (
+      isNaN((
+        Number(desiredrate) /
+        (Number(germ) / 100) /
+        (Number(emergence) / 100)
+      )) ? '' : (
         Number(desiredrate) /
         (Number(germ) / 100) /
         (Number(emergence) / 100)
       ).toString(),
     );
+     
     setoutputratelbsacre(
-      (Number(rateseedsacre) / Number(rateseedslb)).toString(),
+      isNaN((Number(rateseedsacre) / Number(rateseedslb))) ? '' : (Number(rateseedsacre) / Number(rateseedslb)).toString() ,
     );
+
+    const lbperac = document.getElementById("rateseedsacre");
+    if (lbperac) {
+      lbperac.style.border = "2px solid green";
+    }
+
+    const seedsperac = document.getElementById("outputratelbsacre");
+    if (seedsperac) {
+      seedsperac.style.border = "2px solid green";
+    }
+
+
   };
 
   return (
