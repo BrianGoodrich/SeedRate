@@ -305,17 +305,16 @@ export default function Home() {
                 </div>
                 <div className="mt-6 flex items-center justify-end gap-x-6">
                   <button
-                    style={{ cursor:'pointer' }}
                     type="button"
                     onClick={() => calibrate()}
-                    className="relative z-10 rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                  >
+                    className="cursor-pointer rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-150 hover:bg-indigo-400 active:bg-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+
                     Calibrate
                   </button>
                 </div>
               </div>
             </div>
-          <form onSubmit={(e) => e.preventDefault()} onTouchStart={(e) => e.preventDefault()}>
+          {/* <form onSubmit={(e) => e.preventDefault()} onTouchStart={(e) => e.preventDefault()}>
             <div className="space-y-12">
               <div className="border-b border-white/10 pb-12">
                 <h2 className="text-base/7 font-semibold text-white">
@@ -463,24 +462,23 @@ export default function Home() {
                 </div>
                 <div className="mt-6 flex items-center justify-end gap-x-6">
                   <button
-                    style={{ cursor:'pointer' }}
                     type="button"
                     onClick={() => calculate()}
-                    className="relative z-10 rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                    className="border-4 border-red-500 cursor-pointer relative z-10 rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     Calculate
                   </button>
                 </div>
               </div>
             </div>
-          </form>
+          </form> */}
         </div>
       </main>
-      {showFlash && (
+      {/* {showFlash && (
         <div className="fixed inset-0 z-[999999] pointer-events-none">
           <Image src={`${prefix}/flashimg.jpg`} alt="flash" fill />
         </div>
-      )}
+      )} */}
     </div>
   );
 }
