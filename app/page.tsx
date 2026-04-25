@@ -108,7 +108,7 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <form onSubmit={(e) => e.preventDefault()}>
+          <form onSubmit={(e) => e.preventDefault()} onTouchStart={(e) => e.preventDefault()}>
             <div className="space-y-12">
               <div className="border-b border-white/10 pb-12">
                 <h2 className="text-base/7 font-semibold text-white">
@@ -304,10 +304,19 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                <div className="mt-6 flex items-center justify-end gap-x-6">
+                  <button
+                    type="button"
+                    onClick={() => calibrate()}
+                    className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  >
+                    Calibrate
+                  </button>
+                </div>
               </div>
             </div>
 
-            <div className="mt-6 flex items-center justify-end gap-x-6">
+            {/* <div className="mt-6 flex items-center justify-end gap-x-6">
               <button
                 type="button"
                 onClick={() => calibrate()}
@@ -315,9 +324,9 @@ export default function Home() {
               >
                 Calibrate
               </button>
-            </div>
+            </div> */}
           </form>
-          <form onSubmit={(e) => e.preventDefault()}>
+          <form onSubmit={(e) => e.preventDefault()} onTouchStart={(e) => e.preventDefault()}>
             <div className="space-y-12">
               <div className="border-b border-white/10 pb-12">
                 <h2 className="text-base/7 font-semibold text-white">
@@ -463,9 +472,18 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                <div className="mt-6 flex items-center justify-end gap-x-6">
+                  <button
+                    type="button"
+                    onClick={() => calculate()}
+                    className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  >
+                    Calculate
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="mt-6 flex items-center justify-end gap-x-6">
+            {/* <div className="mt-6 flex items-center justify-end gap-x-6">
               <button
                 type="button"
                 onClick={() => calculate()}
@@ -473,7 +491,7 @@ export default function Home() {
               >
                 Calculate
               </button>
-            </div>
+            </div> */}
           </form>
         </div>
       </main>
