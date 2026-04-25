@@ -25,11 +25,12 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "browserslist": [
-  ">0.2%",
-  "not dead",
+"browserslist": [
+  "defaults",
+  "cover 99.5%",
   "not op_mini all",
-  "iOS >= 12",
-  "Safari >= 12"
+  "iOS >= 9",
+  "Safari >= 9",
+  "ie >= 11"
 ]
 }
