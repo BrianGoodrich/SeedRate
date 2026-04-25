@@ -137,7 +137,7 @@ export default function Home() {
                         name="numrows"
                         value={rowwidth}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setrowwidth(e.target.value)
                             : ""
                         
@@ -162,7 +162,7 @@ export default function Home() {
                         name="numrows"
                         value={numrows}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setnumrows(e.target.value)
                             : ""
                         }
@@ -186,7 +186,7 @@ export default function Home() {
                         name="wheeldiam"
                         value={wheeldiam}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setwheeldiam(e.target.value)
                             : ""
                         }
@@ -209,7 +209,7 @@ export default function Home() {
                         name="numrevs"
                         value={numrevs}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setnumrevs(e.target.value)
                             : ""
                         }
@@ -233,7 +233,7 @@ export default function Home() {
                         name="seedslb"
                         value={seedslb}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setseedslb(e.target.value)
                             : ""
                         }
@@ -256,7 +256,7 @@ export default function Home() {
                         name="gramscaught"
                         value={gramscaught}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setgramscaught(e.target.value)
                             : ""
                         }
@@ -281,7 +281,7 @@ export default function Home() {
                         name="calibrateseedsperac"
                         value={calibrateseedsperac}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setcalibrateseedsperac(e.target.value)
                             : ""
                         }
@@ -305,7 +305,7 @@ export default function Home() {
                         name="calibratelbsperac"
                         value={calibratelbsperac}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setcalibratelbsperac(e.target.value)
                             : ""
                         }
@@ -349,7 +349,7 @@ export default function Home() {
                         name="desiredrate"
                         value={desiredrate}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setdesiredrate(e.target.value)
                             : ""
                         }
@@ -373,7 +373,7 @@ export default function Home() {
                         name="rateseedslb"
                         value={rateseedslb}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setrateseedslb(e.target.value)
                             : ""
                         }
@@ -396,7 +396,7 @@ export default function Home() {
                         name="germ"
                         value={germ}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setgerm(e.target.value)
                             : ""
                         }
@@ -419,7 +419,7 @@ export default function Home() {
                         name="emergence"
                         value={emergence}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setemergence(e.target.value)
                             : ""
                         }
@@ -443,7 +443,7 @@ export default function Home() {
                         className="text-center"
                         value={rateseedsacre}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setrateseedsacre(e.target.value)
                             : ""
                         }
@@ -466,7 +466,7 @@ export default function Home() {
                         name="outputratelbsacre"
                         value={outputratelbsacre}
                         onChange={(e) =>
-                          /^\d*$/.test(e.target.value)
+                          /^(?:[1-9]\d*)?$/.test(e.target.value)
                             ? setoutputratelbsacre(e.target.value)
                             : ""
                         }
