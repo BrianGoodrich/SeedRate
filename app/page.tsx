@@ -99,12 +99,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <button
-        type="button"
-        onClick={() => alert("test")}
-        >
-        Calibrate
-        </button>
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center py-8 px-4 bg-white dark:bg-black sm:items-center">
         <Image
           src={`${prefix}/seedratelogo.png`}
@@ -311,7 +305,7 @@ export default function Home() {
                 </div>
                 <div className="mt-6 flex items-center justify-end gap-x-6">
                   <button
-                    style={{ position: "relative", zIndex: 9999, pointerEvents: "auto" }}
+                    style={{ cursor:'pointer' }}
                     type="button"
                     onClick={() => calibrate()}
                     className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
@@ -469,7 +463,7 @@ export default function Home() {
                 </div>
                 <div className="mt-6 flex items-center justify-end gap-x-6">
                   <button
-                    style={{ position: "relative", zIndex: 9999, pointerEvents: "auto" }}
+                    style={{ cursor:'pointer' }}
                     type="button"
                     onClick={() => calculate()}
                     className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
