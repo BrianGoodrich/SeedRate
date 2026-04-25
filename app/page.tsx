@@ -43,23 +43,23 @@ export default function Home() {
       maximumFractionDigits: 2
     }).toString());
 
-    const lbperac = document.getElementById("calibratelbsperac");
-    if (lbperac) {
-      lbperac.style.border = "2px solid green";
-      lbperac.style.borderRadius = "8px";
-    }
+    // const lbperac = document.getElementById("calibratelbsperac");
+    // if (lbperac) {
+    //   lbperac.style.border = "2px solid green";
+    //   lbperac.style.borderRadius = "8px";
+    // }
 
-    const seedsperac = document.getElementById("calibrateseedsperac");
-    if (seedsperac) {
-      seedsperac.style.border = "2px solid green";
-      seedsperac.style.borderRadius = "8px";
-    }
+    // const seedsperac = document.getElementById("calibrateseedsperac");
+    // if (seedsperac) {
+    //   seedsperac.style.border = "2px solid green";
+    //   seedsperac.style.borderRadius = "8px";
+    // }
 
-    setShowFlash(true);
+    // setShowFlash(true);
 
-    setTimeout(() => {
-      setShowFlash(false);
-    }, 50);
+    // setTimeout(() => {
+    //   setShowFlash(false);
+    // }, 50);
   };
 
   const calculate = () => {
@@ -82,17 +82,17 @@ export default function Home() {
     }).toString() ,
     );
 
-    const lbperac = document.getElementById("rateseedsacre");
-    if (lbperac) {
-      lbperac.style.border = "2px solid green";
-      lbperac.style.borderRadius = "8px";
-    }
+    // const lbperac = document.getElementById("rateseedsacre");
+    // if (lbperac) {
+    //   lbperac.style.border = "2px solid green";
+    //   lbperac.style.borderRadius = "8px";
+    // }
 
-    const seedsperac = document.getElementById("outputratelbsacre");
-    if (seedsperac) {
-      seedsperac.style.border = "2px solid green";
-      seedsperac.style.borderRadius = "8px";
-    }
+    // const seedsperac = document.getElementById("outputratelbsacre");
+    // if (seedsperac) {
+    //   seedsperac.style.border = "2px solid green";
+    //   seedsperac.style.borderRadius = "8px";
+    // }
 
   }
   
@@ -309,8 +309,8 @@ export default function Home() {
                   <button
                     type="button"
                     onPointerDown={() => calibrate()}
-                    className="relative z-[9999] pointer-events-auto cursor-pointer rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-150 hover:bg-indigo-400 active:bg-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
-
+                    className="relative z-[9999] pointer-events-auto cursor-pointer rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-150 hover:bg-indigo-400 active:bg-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                    >
                     Calibrate
                   </button>
                 </div>
