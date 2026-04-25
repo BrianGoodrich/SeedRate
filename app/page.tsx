@@ -267,6 +267,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        disabled
                         inputMode="numeric"
                         id="calibrateseedsperac"
                         name="calibrateseedsperac"
@@ -289,6 +290,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        disabled
                         inputMode="numeric"
                         id="calibratelbsperac"
                         name="calibratelbsperac"
@@ -307,7 +309,7 @@ export default function Home() {
                   <button
                     type="button"
                     onPointerDown={() => calibrate()}
-                    className="cursor-pointer rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-150 hover:bg-indigo-400 active:bg-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                    className="relative z-[9999] pointer-events-auto cursor-pointer rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors duration-150 hover:bg-indigo-400 active:bg-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
 
                     Calibrate
                   </button>
