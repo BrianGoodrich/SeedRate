@@ -40,11 +40,13 @@ export default function Home() {
     const lbperac = document.getElementById("calibratelbsperac");
     if (lbperac) {
       lbperac.style.border = "2px solid green";
+      lbperac.style.borderRadius = "8px";
     }
 
     const seedsperac = document.getElementById("calibrateseedsperac");
     if (seedsperac) {
       seedsperac.style.border = "2px solid green";
+      seedsperac.style.borderRadius = "8px";
     }
 
     setShowFlash(true);
@@ -74,11 +76,13 @@ export default function Home() {
     const lbperac = document.getElementById("rateseedsacre");
     if (lbperac) {
       lbperac.style.border = "2px solid green";
+      lbperac.style.borderRadius = "8px";
     }
 
     const seedsperac = document.getElementById("outputratelbsacre");
     if (seedsperac) {
       seedsperac.style.border = "2px solid green";
+      seedsperac.style.borderRadius = "8px";
     }
 
 
