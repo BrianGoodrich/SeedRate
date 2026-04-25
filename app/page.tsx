@@ -307,7 +307,7 @@ export default function Home() {
                   <button
                     style={{ position: "relative", zIndex: 9999, pointerEvents: "auto" }}
                     type="button"
-                    onClick={() => calibrate()}
+                    onClick={() => alert("Test")}
                     className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     Calibrate
