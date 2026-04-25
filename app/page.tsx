@@ -108,7 +108,6 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <form onSubmit={(e) => e.preventDefault()} onTouchStart={(e) => e.preventDefault()}>
             <div className="space-y-12">
               <div className="border-b border-white/10 pb-12">
                 <h2 className="text-base/7 font-semibold text-white">
@@ -316,7 +315,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </form>
           <form onSubmit={(e) => e.preventDefault()} onTouchStart={(e) => e.preventDefault()}>
             <div className="space-y-12">
               <div className="border-b border-white/10 pb-12">
