@@ -34,8 +34,14 @@ export default function Home() {
 
     const seedsperacre = lbsperacre * Number(seedslb);
 
-    setcalibratelbsperac(isNaN(lbsperacre) ? "" : lbsperacre.toString());
-    setcalibrateseedsperac(isNaN(seedsperacre) ? "" : seedsperacre.toString());
+    setcalibratelbsperac(isNaN(lbsperacre) ? "" : lbsperacre.toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }).toString());
+    setcalibrateseedsperac(isNaN(seedsperacre) ? "" : seedsperacre.toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }).toString());
 
     const lbperac = document.getElementById("calibratelbsperac");
     if (lbperac) {
@@ -70,7 +76,10 @@ export default function Home() {
     );
      
     setoutputratelbsacre(
-      isNaN((Number(rateseedsacre) / Number(rateseedslb))) ? '' : (Number(rateseedsacre) / Number(rateseedslb)).toString() ,
+      isNaN((Number(rateseedsacre) / Number(rateseedslb))) ? '' : (Number(rateseedsacre) / Number(rateseedslb)).toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }).toString() ,
     );
 
     const lbperac = document.getElementById("rateseedsacre");
@@ -142,6 +151,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="numrows"
                         name="numrows"
                         value={numrows}
@@ -165,6 +175,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="wheeldiam"
                         name="wheeldiam"
                         value={wheeldiam}
@@ -187,6 +198,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="numrevs"
                         name="numrevs"
                         value={numrevs}
@@ -202,6 +214,7 @@ export default function Home() {
                   </div>
                   <div className="sm:col-span-3">
                     <label
+                        inputMode="numeric"
                       htmlFor="seedslb"
                       className="block text-sm/6 font-medium text-white"
                     >
@@ -209,6 +222,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="seedslb"
                         name="seedslb"
                         value={seedslb}
@@ -231,6 +245,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="gramscaught"
                         name="gramscaught"
                         value={gramscaught}
@@ -253,6 +268,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="calibrateseedsperac"
                         name="calibrateseedsperac"
                         value={calibrateseedsperac}
@@ -274,6 +290,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="calibratelbsperac"
                         name="calibratelbsperac"
                         value={calibratelbsperac}
@@ -317,6 +334,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="desiredrate"
                         name="desiredrate"
                         value={desiredrate}
@@ -340,6 +358,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="rateseedslb"
                         name="rateseedslb"
                         value={rateseedslb}
@@ -362,6 +381,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="germ"
                         name="germ"
                         value={germ}
@@ -384,6 +404,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="emergence"
                         name="emergence"
                         value={emergence}
@@ -406,6 +427,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="rateseedsacre"
                         name="rateseedsacre"
                         value={rateseedsacre}
@@ -427,6 +449,7 @@ export default function Home() {
                     </label>
                     <div className="mt-2">
                       <input
+                        inputMode="numeric"
                         id="outputratelbsacre"
                         name="outputratelbsacre"
                         value={outputratelbsacre}
