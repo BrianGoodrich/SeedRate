@@ -20,6 +20,8 @@ export default function Home() {
   const [showFlash, setShowFlash] = useState(false);
   const prefix = process.env.NODE_ENV === "production" ? "/SeedRate" : "";
 
+  alert("test");
+
   const calibrate = () => {
     //Get area covered
     const area =
