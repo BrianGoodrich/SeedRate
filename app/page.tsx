@@ -97,7 +97,18 @@ export default function Home() {
 
   };
 
+  const parent = document.getElementById("calibratediv");
+  if(parent != null){
+    parent.addEventListener("click", function() {
+      calibrate();
+    });
+  }
+  
+
+  
+
   return (
+    
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center py-8 px-4 bg-white dark:bg-black sm:items-center">
         <Image
@@ -304,10 +315,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="mt-6 flex items-center justify-end gap-x-6">
+                 
+                </div>
+                <div className="mt-6 flex items-center justify-end gap-x-6" id='calibratediv'>
                   <button
                     style={{ cursor:'pointer' }}
                     type="button"
-                    onMouseDown={() => calibrate()}
+                    id="calibratebutton"
                     className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     Calibrate
@@ -465,7 +479,7 @@ export default function Home() {
                   <button
                     style={{ cursor:'pointer' }}
                     type="button"
-                    onMouseDown={() => calculate()}
+                    onClick={() => calculate()}
                     className="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                   >
                     Calculate
