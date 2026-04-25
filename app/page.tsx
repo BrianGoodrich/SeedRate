@@ -55,11 +55,11 @@ export default function Home() {
       seedsperac.style.borderRadius = "8px";
     }
 
-    setShowFlash(true);
+    // setShowFlash(true);
 
-    setTimeout(() => {
-      setShowFlash(false);
-    }, 50);
+    // setTimeout(() => {
+    //   setShowFlash(false);
+    // }, 50);
   };
 
   const calculate = () => {
@@ -477,11 +477,11 @@ export default function Home() {
           </form>
         </div>
       </main>
-      {showFlash && (
+      {/* {showFlash && (
         <div className="fixed inset-0 z-[999999] pointer-events-none">
           <Image src={`${prefix}/flashimg.jpg`} alt="flash" fill />
         </div>
-      )}
+      )} */}
     </div>
   );
 }
