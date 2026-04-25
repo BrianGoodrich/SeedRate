@@ -55,11 +55,11 @@ export default function Home() {
       seedsperac.style.borderRadius = "8px";
     }
 
-    // setShowFlash(true);
+    setShowFlash(true);
 
-    // setTimeout(() => {
-    //   setShowFlash(false);
-    // }, 50);
+    setTimeout(() => {
+      setShowFlash(false);
+    }, 50);
   };
 
   const calculate = () => {
@@ -108,7 +108,7 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <form>
+          <form onSubmit={(e) => e.preventDefault()}>
             <div className="space-y-12">
               <div className="border-b border-white/10 pb-12">
                 <h2 className="text-base/7 font-semibold text-white">
@@ -317,7 +317,7 @@ export default function Home() {
               </button>
             </div>
           </form>
-          <form>
+          <form onSubmit={(e) => e.preventDefault()}>
             <div className="space-y-12">
               <div className="border-b border-white/10 pb-12">
                 <h2 className="text-base/7 font-semibold text-white">
@@ -477,11 +477,11 @@ export default function Home() {
           </form>
         </div>
       </main>
-      {/* {showFlash && (
+      {showFlash && (
         <div className="fixed inset-0 z-[999999] pointer-events-none">
           <Image src={`${prefix}/flashimg.jpg`} alt="flash" fill />
         </div>
-      )} */}
+      )}
     </div>
   );
 }
