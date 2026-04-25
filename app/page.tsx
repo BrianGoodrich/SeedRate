@@ -62,8 +62,8 @@ export default function Home() {
   };
 
   const calculate = () => {
-    setrateseedsacre(
-      isNaN((
+
+    const rateseed = isNaN((
         Number(desiredrate) /
         (Number(germ) / 100) /
         (Number(emergence) / 100)
@@ -71,15 +71,29 @@ export default function Home() {
         Number(desiredrate) /
         (Number(germ) / 100) /
         (Number(emergence) / 100)
-      ).toString(),
-    );
-     
-    setoutputratelbsacre(
-      isNaN((Number(rateseedsacre) / Number(rateseedslb))) ? '' : (Number(rateseedsacre) / Number(rateseedslb)).toLocaleString("en-US", {
+      )
+
+    setrateseedsacre(
+      rateseed.toLocaleString("en-US", {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2
-    }).toString() ,
+    })
     );
+
+
+    const ratelb = Number(rateseed) / Number(rateseedslb);
+
+    setoutputratelbsacre(ratelb.toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }))
+
+    // setoutputratelbsacre(
+    //   isNaN((Number(rateseedsacre) / Number(rateseedslb))) ? '' : (Number(rateseedsacre) / Number(rateseedslb)).toLocaleString("en-US", {
+    //   minimumFractionDigits: 2,
+    //   maximumFractionDigits: 2
+    // }).toString() ,
+    // );
 
     const lbperac = document.getElementById("rateseedsacre");
     if (lbperac) {
