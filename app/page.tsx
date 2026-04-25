@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { isAnyArrayBuffer } from "util/types";
 
 export default function Home() {
   const [numrows, setnumrows] = useState("");
